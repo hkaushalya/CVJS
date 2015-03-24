@@ -11,11 +11,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.illuminate.0.7.min.js"></script>
+    <script type="text/javascript" src="scripts/effects.js"></script>
     
     
     <script type="text/javascript">
         $(document).ready( function(){
-            $('#ldiv').illuminate();
+            $('#cdiv').illuminate();
         });
     </script>
 </head>
@@ -23,9 +24,9 @@
 <body>
 
 
-<div class="centerDiv">
-<div id="contact" style="background:#98cb00" text-align="center" height="100px">xxx@gmail.com</div>
-    <div id="ldiv" class="div1">
+<div id="cdiv" class="centerDiv">
+<!-- <div id="contact" style="background:#98cb00" text-align="center" height="100px">xxx@gmail.com</div> -->
+    <div id="ldiv" class="div1" onmouseover="OnMouseIn(this)" onmouseout="OnMouseOut(this)">
         <ul>
             <li>Pen Portrait</li>
             <li>Selection of Projects</li>

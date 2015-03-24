@@ -9,3 +9,14 @@ $(document).ready(function(){
     'outerGlowColor': '#98cb00'
     });
 });
+
+
+function OnMouseIn(elem) {
+    //code
+    //elem.style.border = "2px solid blue";
+    elem.style.background-color: "#99CCCC" ;
+}
+
+function OnMouseOut(elem) {
+    ele.style.border = "";
+}
