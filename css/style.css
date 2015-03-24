@@ -1,0 +1,46 @@
+body {
+    background-color:#000000 ;
+    margin-top:25px;
+    margin-right:25px;
+    margin-left: 25px;
+    margin-bottom: 25:px;
+}
+div {
+    border: 2px;
+    border-radius: 5px;
+    
+}
+.centerDiv {
+    width: 80% auto;
+    height:400px;
+    margin: 0 auto;
+    background-color:#FFA500 ;
+}
+
+.div1 {
+    width: 33%;
+    height:400px;
+    background-color:#A52A2A ;
+    float:left;
+}
+
+.div2 {
+    width: 34%;
+    height:400px;
+    background-color:#FFA500 ;
+    float:left;
+}
+
+.div3 {
+    width: 33%;
+    height:400px;
+    background-color:#008000 ;
+    float:left;
+}
+
+.divs {
+    width: 2px;
+    height:200px;
+    background-color:#008000 ;
+    float:left;
+}
