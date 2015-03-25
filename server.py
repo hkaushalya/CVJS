@@ -4,6 +4,7 @@ from bottle import route, run, debug, static_file
 @route("/")
 def home():
     return static_file('index.html', root='')
+    #return static_file('test/test.html', root='')
 
 # Static files such as images or CSS files are not served automatically
 # Added a route and a callback to control which files get served and where to find them
