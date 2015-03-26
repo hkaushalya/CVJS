@@ -7,7 +7,7 @@ body {
 }
 div {
     border: 2px;
-    border-radius: 7px;
+    border-radius: 9px;
     
 }
 .centerDiv {
@@ -15,12 +15,13 @@ div {
     height:500px;
     margin: 0 auto;
 /* background-color:#FFA500 ; */
-    background-color:#FFFFFF ;
+    background-color:#FFFFFF ; */
+/*    background-color:#000000   ;*/
 
 }
 
 .div1 {
-    width: 33%;
+    width: 22%;
     height:500px;
     background-color:#A52A2A ;
     float:left;
@@ -29,7 +30,7 @@ div {
 }
 
 .div2 {
-    width: 32%;
+    width: 46%;
     height:480px;
     background-color:#FFA500 ;
     float:left;
@@ -38,7 +39,7 @@ div {
 }
 
 .div3 {
-    width: 33%;
+    width: 29%;
     height:500px;
     background-color:#008000 ;
     float:left;
@@ -56,6 +57,8 @@ div {
 }
 .divmainitem {
     height: 50px;
+    opacity: 1.0;
+    background-color:#AE2A2A;
 }
 
 .divsubitem {

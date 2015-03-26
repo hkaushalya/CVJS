@@ -11,6 +11,17 @@
 });
 */
 
+var home_text = "<h2 align='center'>Sam Hewamanage, PhD.</h2> \
+        <div align='center'> \
+            <b>PhD - Experimental High Energy Physics</b><br> \
+            Baylor University, USA<br> \
+            <b>MS - Physics</b><br> \
+            University of Cincinnati, USA<br> \
+            <b>BSc (Hons) Physics</b><br> \
+            University of Colombo, Sri Lanka<br> \
+        </div> \
+ ";
+
 
 var pen_text = "<H3>Key Skills</H3> I joined Tessella after finishing my \
                 post-doc in high energy particle physics at Fermilab. While at \
@@ -281,10 +292,11 @@ function ChangeContent(srcEle, tgtEle, msg) {
             console.log("ChangeContent triggered by " + srcEle.id);
             var te = document.getElementById(tgtEle);
             if (te) {
-                if (srcEle.id == "pen") {
+                if (srcEle.id == "home") {
                     //te.innerHTML = pen_text;
                     //adjustHeights(te);
-                    srcEle.fon
+                    SetText(te, home_text);                    
+                } else if (srcEle.id == "pen") {
                     SetText(te, pen_text);
                 } else if (srcEle.id == "qua") {
                     SetText(te, qua_text);                    
@@ -323,12 +335,11 @@ function ChangeContent(srcEle, tgtEle, msg) {
 });
 */
 
-/*$(document).ready( function(){
+$(document).ready( function(){
     $('#cdiv').illuminate();
     $("#accordian").accordian();
 
 });
-*/
 
 /*$("#ldiv").click(function() {
     $('#ldiv').fadeOut("slow", function() {
