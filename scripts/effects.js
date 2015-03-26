@@ -117,7 +117,7 @@ var emp_text = "\
 </tr> \
 ";
 
-proj_text_temp = "<div id='accordian' \
+proj_text_temp = ' <div id="accordian"> \
                 <h3>Section 1</h3> \
                 <div> \
                   <p> \
@@ -150,7 +150,7 @@ proj_text_temp = "<div id='accordian' \
                   </ul> \
                 </div> \
             </div> \
-        ";
+        ';
 
 proj_text = "\
 <h2>Suggestions for Social Content Tagging</h2> \
@@ -309,7 +309,8 @@ function ChangeContent(srcEle, tgtEle, msg) {
                 } else if (srcEle.id == "emp") {
                     SetText(te, emp_text);                    
                 } else if (srcEle.id == "proj") {
-                    SetText(te, proj_text);
+                    //SetText(te, proj_text_temp);
+                    te.innerHTML = proj_text_temp;
                 } else if (srcEle.id == "tech") {
                     SetText(te, tech_text);                    
                 }
@@ -335,12 +336,12 @@ function ChangeContent(srcEle, tgtEle, msg) {
 });
 */
 
-$(document).ready( function(){
+/*$(document).ready( function(){
     $('#cdiv').illuminate();
     $("#accordian").accordian();
 
 });
-
+*/
 /*$("#ldiv").click(function() {
     $('#ldiv').fadeOut("slow", function() {
         // Animation Complete
